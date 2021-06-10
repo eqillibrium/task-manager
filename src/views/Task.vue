@@ -2,7 +2,7 @@
   <div class="card">
     <h2 @click="show">{{ task.title }}</h2>
     <p><strong>Статус</strong>: <AppStatus :type="task.status" /></p>
-    <p><strong>Дэдлайн</strong>: {{ task.date }}</p>
+    <p><strong>Дэдлайн</strong>: {{ new Date(task.date).toLocaleDateString() }}</p>
     <p><strong>Описание</strong>: {{ task.description }}</p>
     <div>
       <button

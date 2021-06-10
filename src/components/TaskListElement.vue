@@ -8,10 +8,7 @@
       <p>
         <strong>
           <small>
-            {{ task.date}}
-          </small>
-          <small>
-            id: {{ task.id}}
+            {{ new Date(task.date).toLocaleDateString() }}
           </small>
         </strong>
       </p>
